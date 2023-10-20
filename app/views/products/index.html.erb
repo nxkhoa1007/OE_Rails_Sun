@@ -1,0 +1,16 @@
+<%= provide :title, t("product.products") %>
+<p style="color: green"><%= notice %></p>
+
+<h1><%= t("product.products") %></h1>
+<%= link_to t("product.new"), new_product_path %>
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th><%= t("product.name") %></th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+  <tbody>
+      <%= render(@products) || "No product" %>
+  </tbody>
+</table>
