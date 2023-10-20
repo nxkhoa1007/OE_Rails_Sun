@@ -38,6 +38,10 @@ gem "bcrypt", "3.1.13"
 gem "importmap-rails"
 
 gem "pry-rails"
+
+gem "faker", "2.21.0"
+
+gem "pagy"
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 

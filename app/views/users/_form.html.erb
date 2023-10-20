@@ -1,0 +1,26 @@
+<%= form_for @user, url: local_assigns[:url] do |f| %>
+  <%= render "shared/error_messages" %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :email %>
+  <%= f.email_field :email %>
+  <%= f.label :password%>
+  <%= f.password_field :password %>
+  <%= f.label :password_confirmation%>
+  <%= f.password_field :password_confirmation %>
+  <%= f.label :dob %>
+  <%= f.date_field :dob %>
+  <%= f.label :gender %>
+  <div class="radio-group">
+    <%= f.label :gender_male, class:"radio-inline" do %>
+    <%= f.radio_button :gender, 'Male' , checked: true %><%= t"male" %>
+    <% end %>
+    <%= f.label :gender_female, class:"radio-inline" do %>
+      <%= f.radio_button :gender, 'Female'%> <%= t"female" %>
+    <% end %>
+    <%= f.label :gender_other, class:"radio-inline" do %>
+      <%= f.radio_button :gender, 'Other'%> <%= t"other" %>
+    <% end %>
+  </div>
+  <%=f.submit yield(:button_text), class: "btn btn-primary" %>
+<% end %>

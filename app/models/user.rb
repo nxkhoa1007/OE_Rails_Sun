@@ -1,4 +1,6 @@
 class User < ApplicationRecord
+  scope :sort_by_name, -> { order(name: :asc) }
+
   validates :name, presence: true, length: {maximum: Settings.max_length}
   validates :email, presence: true, length: {maximum: Settings.max_length},
     uniqueness: {case_sensitive: false}, format: {with: Regexp.new(Settings.VALID_EMAIL_REGEX)}
@@ -22,7 +24,6 @@ class User < ApplicationRecord
     def new_token
       SecureRandom.urlsafe_base64
     end
-
   end
 
   def remember
