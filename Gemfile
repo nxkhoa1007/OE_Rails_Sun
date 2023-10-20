@@ -36,6 +36,8 @@ gem "rails-i18n"
 gem "bcrypt", "3.1.13"
 
 gem "importmap-rails"
+
+gem "pry-rails"
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 

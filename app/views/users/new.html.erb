@@ -17,7 +17,7 @@
       <%= f.label :gender %>
       <div class="radio-group">
         <%= f.label :gender_male, class:"radio-inline" do %>
-          <%= f.radio_button :gender, Settings.gender_male , checked: true %><%= t "male" %>
+          <%= f.radio_button :gender, Settings.gender_male, checked: true %><%= t "male" %>
         <% end %>
         <%= f.label :gender_female, class:"radio-inline" do %>
           <%= f.radio_button :gender, Settings.gender_female %> <%= t "female" %>
