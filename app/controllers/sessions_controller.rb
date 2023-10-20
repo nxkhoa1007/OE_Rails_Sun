@@ -16,7 +16,7 @@ class SessionsController < ApplicationController
         redirect_to forwarding_url || user
       else
         flash[:warning] = t("account_not_activated")
-        render :new, status:422
+        render :new, status: :unprocessable_entity
       end
     else
       flash.now[:danger] = t("invalid_email_password_combination")

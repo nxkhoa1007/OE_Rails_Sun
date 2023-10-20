@@ -35,7 +35,7 @@ class UsersController < ApplicationController
       flash[:success] = t("created_successful")
       redirect_to root_path
     else
-      render :new, status: 422
+      render :new, status: :unprocessable_entity
     end
   end
 

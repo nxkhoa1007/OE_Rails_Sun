@@ -5,4 +5,5 @@ gender_male: 'Male'
 gender_female: 'Female'
 gender_other: 'Other'
 pagy_limit: 10
-gravatar_size: 50
+digit_50: 50
+digit_2: 2
