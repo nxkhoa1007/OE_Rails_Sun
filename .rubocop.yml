@@ -139,6 +139,13 @@ Layout/CaseIndentation:
     - end
   IndentOneStep: false
 
+Style/Documentation:
+  Description: "Document classes and non-namespace modules."
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+
 Style/ClassAndModuleChildren:
   # Checks the style of children definitions at classes and modules.
   #

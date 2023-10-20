@@ -32,6 +32,8 @@ gem "bootstrap-sass"
 gem "config"
 
 gem "rails-i18n"
+
+gem "bcrypt", "3.1.13"
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
