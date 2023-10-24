@@ -1,16 +1,38 @@
 vi:
   demo_partials:
     new:
-      title: "Vùng mới"
-      action: "Thao tác tạo vùng mới"
+      title: 'Vùng mới'
+      action: 'Thao tác tạo vùng mới'
     edit:
-      title: "Chỉnh sửa vùng"
-      action: "Thao tác chỉnh sửa vùng"
+      title: 'Chỉnh sửa vùng'
+      action: 'Thao tác chỉnh sửa vùng'
   product:
     products: 'Danh sách sản phẩm'
     name: 'Tên sản phẩm'
     new: 'Sản phẩm mới'
+  helpers:
+    submit:
+      user:
+        create: 'Đăng ký tài khoản'
+  activerecord:
+    models:
+      user: 'Người dùng'
+    attributes:
+      user:
+        name: 'Tên'
+        email: 'Email'
+        password: 'Mật khẩu'
+        password_confirmation: 'Nhập lại mật khẩu'
+        dob: 'Ngày sinh'
+        gender: 'Giới tính'
+  the_form_contains: 'Biểu mẫu có'
+  error:
+    one: 'lỗi'
+    other: 'lỗi'
   hello: 'Xin chào TPIV'
+  male: 'Nam'
+  female: 'Nữ'
+  other: 'Khác'
   show: 'Xem'
   edit: 'Chỉnh sửa'
   destroy: 'Xoá'
@@ -24,3 +46,8 @@ vi:
   date: 'Ngày'
   zone: 'Vùng'
   title: 'Hướng dẫn học Ruby On Rails'
+  register: 'Đăng ký tài khoản'
+  created_at: 'Ngày tạo'
+  updated_at: 'Cập nhật lần cuối'
+  created_successful: 'Tạo tài khoản thành công'
+  not_found_user: 'Không tìm thấy người dùng'

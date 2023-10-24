@@ -4,11 +4,11 @@
 #
 # To use the locales, use `I18n.t`:
 #
-#     I18n.t "hello"
+#     I18n.t 'hello'
 #
 # In views, this is aliased to just `t`:
 #
-#     <%= t("hello") %>
+#     <%= t('hello') %>
 #
 # To use a different locale, set it with `I18n.locale`:
 #
@@ -24,7 +24,7 @@
 # Instead, surround them with single quotes.
 #
 # en:
-#   "true": "foo"
+#   'true': 'foo'
 #
 # To learn more, please read the Rails Internationalization guide
 # available at https://guides.rubyonrails.org/i18n.html.
@@ -32,16 +32,38 @@
 en:
   demo_partials:
     new:
-      title: "Zone new"
-      action: "Zone new action"
+      title: 'Zone new'
+      action: 'Zone new action'
     edit:
-      title: "Zone edit"
-      action: "Zone edit action"
+      title: 'Zone edit'
+      action: 'Zone edit action'
   product:
     products: 'List of products'
     name: 'Product name'
     new: 'New product'
+  helpers:
+    submit:
+      user:
+        create: 'Create Your Account'
+  activerecord:
+    models:
+      user: 'User'
+    attributes:
+      user:
+        name: 'Name'
+        email: 'Email'
+        password: 'Password'
+        password_confirmation: 'Retype password'
+        dob: 'Birthday'
+        gender: 'Gender'
+  the_form_contains: 'The Form Contains'
+  error:
+    one: 'error'
+    other: 'errors'
   hello: 'Hello TIPV'
+  male: 'Male'
+  female: 'Female'
+  other: 'Other'
   show: 'Show'
   edit: 'Edit'
   destroy: 'Destroy'
@@ -55,3 +77,8 @@ en:
   date: 'Date'
   zone: 'Zone'
   title: 'Ruby On Rails tutorials'
+  register: 'Register Account'
+  created_at: 'Created at'
+  updated_at: 'Update at'
+  created_successful: 'Account Created successful'
+  not_found_user: 'Not found user'
