@@ -17,10 +17,11 @@ vi:
   activerecord:
     models:
       user: 'Người dùng'
+      session: 'Session'
     attributes:
       user:
         name: 'Tên'
-        email: 'Email'
+        email: 'Địa chỉ Email'
         password: 'Mật khẩu'
         password_confirmation: 'Nhập lại mật khẩu'
         dob: 'Ngày sinh'
@@ -39,6 +40,10 @@ vi:
   home: 'Trang chủ'
   help: 'Hỗ trợ'
   login: 'Đăng nhập'
+  email: 'Địa chỉ Email'
+  password: 'Mật khẩu'
+  new_user?: 'Thành viên mới?'
+  sign_up_now!: 'Đăng ký ngay!'
   en: 'Tiếng Anh'
   vi: 'Tiếng Việt'
   logo: 'Rails Cơ Bản'
@@ -51,3 +56,8 @@ vi:
   updated_at: 'Cập nhật lần cuối'
   created_successful: 'Tạo tài khoản thành công'
   not_found_user: 'Không tìm thấy người dùng'
+  account: 'Tài khoản'
+  profile: 'Thông tin cá nhân'
+  settings: 'Cài đặt'
+  log_out: 'Đăng xuất'
+  invalid_email_password_combination : 'Email hoặc mật khẩu không chính xác'

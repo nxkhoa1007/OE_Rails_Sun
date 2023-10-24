@@ -1,3 +1,5 @@
 <%= provide :title, t("home") %>
 <h1><%= t("home") %></h1>
-<%= link_to t("register"), class: "btn btn-primary" %>
+<% unless logged_in? %>
+  <%= link_to t("register"), signup_path , class: "btn btn-primary" %>
+<% end %>

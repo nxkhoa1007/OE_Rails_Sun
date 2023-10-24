@@ -12,6 +12,10 @@ Rails.application.routes.draw do
     get "signup", to:"users#new"
     post "signup", to: "users#create"
     resources :users, only: :show
+
+    get 'login', to:"sessions#new"
+    post 'login', to:"sessions#create"
+    get 'logout', to:"sessions#destroy"
   end
   # Defines the root path route ("/")
   # root "articles#index"
