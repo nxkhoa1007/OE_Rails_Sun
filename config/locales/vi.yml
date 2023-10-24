@@ -1,0 +1,26 @@
+vi:
+  demo_partials:
+    new:
+      title: "Vùng mới"
+      action: "Thao tác tạo vùng mới"
+    edit:
+      title: "Chỉnh sửa vùng"
+      action: "Thao tác chỉnh sửa vùng"
+  product:
+    products: 'Danh sách sản phẩm'
+    name: 'Tên sản phẩm'
+    new: 'Sản phẩm mới'
+  hello: 'Xin chào TPIV'
+  show: 'Xem'
+  edit: 'Chỉnh sửa'
+  destroy: 'Xoá'
+  home: 'Trang chủ'
+  help: 'Hỗ trợ'
+  login: 'Đăng nhập'
+  en: 'Tiếng Anh'
+  vi: 'Tiếng Việt'
+  logo: 'Rails Cơ Bản'
+  back: 'Quay lại'
+  date: 'Ngày'
+  zone: 'Vùng'
+  title: 'Hướng dẫn học Ruby On Rails'

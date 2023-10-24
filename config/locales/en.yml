@@ -30,4 +30,28 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  demo_partials:
+    new:
+      title: "Zone new"
+      action: "Zone new action"
+    edit:
+      title: "Zone edit"
+      action: "Zone edit action"
+  product:
+    products: 'List of products'
+    name: 'Product name'
+    new: 'New product'
+  hello: 'Hello TIPV'
+  show: 'Show'
+  edit: 'Edit'
+  destroy: 'Destroy'
+  home: 'Home'
+  help: 'Help'
+  login: 'Login'
+  en: 'English'
+  vi: 'Vietnamese'
+  logo: 'Rails Basic'
+  back: 'Go back'
+  date: 'Date'
+  zone: 'Zone'
+  title: 'Ruby On Rails tutorials'
