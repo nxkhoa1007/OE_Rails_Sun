@@ -6,10 +6,19 @@ class User < ApplicationRecord
   validates :dob, presence: true
 
   has_secure_password
-
   before_save :downcase_email
 
+  def User.digest string
+    cost = if ActiveModel::SecurePassword.min_cost
+              BCrypt::Engine::min_cost
+            else
+              BCrypt::Engine.cost
+            end
+    BCrypt::Password.create String, cost: cost
+  end
+
   private
+
   def downcase_email
     email.downcase!
   end

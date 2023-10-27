@@ -48,6 +48,7 @@ en:
   activerecord:
     models:
       user: 'User'
+      session: 'Session'
     attributes:
       user:
         name: 'Name'
@@ -70,6 +71,10 @@ en:
   home: 'Home'
   help: 'Help'
   login: 'Login'
+  email: 'Email'
+  password: 'Password'
+  new_user?: 'New User?'
+  sign_up_now!: 'Sign Up Now!'
   en: 'English'
   vi: 'Vietnamese'
   logo: 'Rails Basic'
@@ -77,8 +82,14 @@ en:
   date: 'Date'
   zone: 'Zone'
   title: 'Ruby On Rails tutorials'
+  login: 'Login'
   register: 'Register Account'
   created_at: 'Created at'
   updated_at: 'Update at'
   created_successful: 'Account Created successful'
   not_found_user: 'Not found user'
+  account: 'Account'
+  profile: 'Profile'
+  settings: 'Settings'
+  log_out: 'Log out'
+  invalid_email_password_combination : 'Invalid email or password'
