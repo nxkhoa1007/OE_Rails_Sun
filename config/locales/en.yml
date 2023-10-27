@@ -45,6 +45,9 @@ en:
     submit:
       user:
         create: 'Create Your Account'
+  login:
+    email: 'Email'
+    password: 'Password'
   activerecord:
     models:
       user: 'User'
@@ -66,6 +69,9 @@ en:
   female: 'Female'
   other: 'Other'
   show: 'Show'
+  male: 'Male'
+  female: 'Female'
+  other: 'Other'
   edit: 'Edit'
   destroy: 'Destroy'
   home: 'Home'
@@ -93,3 +99,4 @@ en:
   settings: 'Settings'
   log_out: 'Log out'
   invalid_email_password_combination : 'Invalid email or password'
+  remember_me : 'Remember me'
