@@ -1,2 +1,6 @@
 VALID_EMAIL_REGEX: '\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z'
 max_length: 50
+min_length: 6
+gender_male: 'Male'
+gender_female : 'Female'
+gender_other : 'Other'
