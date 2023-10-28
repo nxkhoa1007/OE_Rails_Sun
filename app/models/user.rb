@@ -1,5 +1,11 @@
 class User < ApplicationRecord
   has_many :microposts, dependent: :destroy
+  has_many :active_relationships, class_name: Relationship.name,
+    foreign_key: :follower_id, dependent: :destroy
+  has_many :passive_relationships, class_name: Relationship.name,
+    foreign_key: :followed_id, dependent: :destroy
+  has_many :following, through: :active_relationships, source: :followed
+  has_many :followers, through: :passive_relationships, source: :follower
 
   validates :name, presence: true, length: {maximum: Settings.digit_50}
   validates :email, presence: true,
@@ -34,13 +40,13 @@ class User < ApplicationRecord
     end
   end
 
-  def send_activation_email
-    UserMailer.account_activation(self).deliver_now
-  end
-
   def create_activation_digest
     self.activation_token = User.new_token
     self.activation_digest = User.digest(activation_token)
+  end
+
+  def send_activation_email
+    UserMailer.account_activation(self).deliver_now
   end
 
   def create_reset_digest
@@ -78,7 +84,20 @@ class User < ApplicationRecord
   end
 
   def feed
-    microposts.newest
+    Micropost.relate_post(following_ids << id)
+             .includes(:user, image_attachment: :blob).newest
+  end
+
+  def follow other_user
+    following << other_user
+  end
+
+  def unfollow other_user
+    following.delete other_user
+  end
+
+  def following? other_user
+    following.include? other_user
   end
 
   private
