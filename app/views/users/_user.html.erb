@@ -2,6 +2,6 @@
   <%= gravatar_for user, size: Settings.digit_50 %>
   <%= link_to user.name, user %>
   <% if check_user_role? user %>
-    | <%= link_to t("destroy"), user, data: { "turbo-method": :delete, turbo_confirm: "You sure?" } %>
+    | <%= link_to t("destroy"), user, data: { "turbo-method": :delete, turbo_confirm: t("you_sure?") } %>
   <% end %>
 </li>

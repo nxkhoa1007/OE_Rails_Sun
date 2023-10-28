@@ -5,15 +5,14 @@ class UsersController < ApplicationController
   before_action :admin_user, only: :destroy
 
   def index
-    @pagy, @users = pagy(User.sort_by_name, items:Settings.pagy_limit)
+    @pagy, @users = pagy User.sort_by_name, items: Settings.page_10
   end
 
   def new
     @user = User.new
     if logged_in?
       redirect_to static_pages_home_path
-    end
-    if @user.save
+    elsif @user.save
       log_in @user
       redirect_to static_pages_home_path
     end
@@ -41,6 +40,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find_by id: params[:id]
+    @page, @microposts = pagy @user.feed, items: Settings.page_10
     return if @user
 
     flash.now[:warning] = t("not_found_user")
@@ -65,20 +65,13 @@ class UsersController < ApplicationController
     redirect_to users_path
   end
 
-
   private
 
   def user_params
     params.require(:user)
-          .permit(:name, :email, :password, :password_confirmation, :dob, :gender)
-  end
-
-  def logged_in_user
-    unless logged_in?
-      flash[:danger] = t("please_login")
-      store_location
-      redirect_to login_path
-    end
+          .permit :name, :email,
+                  :password, :password_confirmation,
+                  :dob, :gender
   end
 
   def load_user

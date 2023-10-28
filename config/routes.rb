@@ -20,6 +20,8 @@ Rails.application.routes.draw do
     resources :account_activations, only: %i(edit)
 
     resources :password_resets, except: %i(destroy index show)
+
+    resources :microposts, only: %i(create destroy)
   end
   # Defines the root path route ("/")
   # root "articles#index"

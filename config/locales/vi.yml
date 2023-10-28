@@ -19,6 +19,7 @@ vi:
       user: 'Người dùng'
       session: 'Session'
       password_reset: 'Đổi lại mật khẩu'
+      content: 'Nội dung'
     attributes:
       user:
         name: 'Tên'
@@ -27,6 +28,9 @@ vi:
         password_confirmation: 'Nhập lại mật khẩu'
         dob: 'Ngày sinh'
         gender: 'Giới tính'
+      micropost:
+        content: 'Nội dung'
+        image: 'Tệp'
   the_form_contains: 'Biểu mẫu có'
   error:
     one: 'lỗi'
@@ -43,6 +47,7 @@ vi:
   other: 'Khác'
   edit: 'Chỉnh sửa'
   destroy: 'Xoá'
+  you_sure? : 'Bạn chắc chắn muốn xoá?'
   home: 'Trang chủ'
   help: 'Hỗ trợ'
   login: 'Đăng nhập'
@@ -90,6 +95,17 @@ vi:
   send_email: 'Gửi Email'
   email_not_found: 'Email không tồn tại'
   send_email_reset_success : 'Gửi email đặt lại mật khẩu thành công!'
+  microposts: 'Bài đăng'
+  posted_ago: 'Đăng lên %{time_ago} trước.'
+  micropost_created: 'Bài đăng đã được tạo!'
+  micropost_deleted: 'Đã xoá bài đăng!'
+  micropost_invalid: 'Bài đăng không có sẵn!'
+  post_placeholder: '%{user} ơi, bạn đang nghĩ gì thế?'
+  post: 'Đăng'
+  microposts_feed: 'Các bài đăng'
+  micropost_count:
+    one: 'bài đăng'
+    other: 'bài đăng'
   user_mailer:
     account_activation:
       subject: 'Kích hoạt tài khoản'
@@ -103,6 +119,10 @@ vi:
         reset_instructions: 'Để đặt lại mật khẩu của bạn, hãy nhấn vào liên kết bên dưới:'
         link_expires: 'Liên kết này sẽ hết hạn trong hai giờ.'
         ignore_email: 'Nếu bạn không yêu cầu đặt lại mật khẩu, vui lòng bỏ qua email này và mật khẩu của bạn sẽ được giữ nguyên.'
+  invalid_type: 'phải là định dạng hình ảnh'
+  max_size: 'nên dưới 5MB'
+  alert:
+    limit_size: 'Kích thước file tối đa là 5MB. Hãy chọn file nhỏ hơn.'
   pagy:
     nav:
       prev: 'Trước'

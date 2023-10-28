@@ -51,6 +51,7 @@ en:
   activerecord:
     models:
       user: 'User'
+      micropost: 'Micropost'
       session: 'Session'
       password_reset: 'Password Reset'
     attributes:
@@ -61,6 +62,9 @@ en:
         password_confirmation: 'Retype password'
         dob: 'Birthday'
         gender: 'Gender'
+      micropost:
+        content: 'Content'
+        image: 'File'
   the_form_contains: 'The Form Contains'
   error:
     one: 'error'
@@ -77,6 +81,7 @@ en:
   other: 'Other'
   edit: 'Edit'
   destroy: 'Delete'
+  you_sure? : 'You sure?'
   home: 'Home'
   help: 'Help'
   login: 'Login'
@@ -113,6 +118,7 @@ en:
   cannot_edit : 'You cannot edit this account'
   user_deleted: 'User deleted!'
   delete_fail: 'Delete fail!'
+  micropost_invalid: 'Micropost invalid!'
   cannot_delete: 'You cannot delete this account'
   account_activated: 'Account activated!'
   invalid_activation_link: 'Invalid activation link'
@@ -125,6 +131,16 @@ en:
   update_password: 'Update password'
   reset_success: 'Reset password success'
   send_email_reset_success : 'Send email reset success!'
+  microposts: 'Microposts'
+  posted_ago: 'Posted %{time_ago} ago.'
+  micropost_created: 'Micropost created!'
+  micropost_deleted: 'Micropost deleted!'
+  post_placeholder: 'Hey %{user}, what are you thinking?'
+  post: 'Post'
+  microposts_feed: 'Microposts feed'
+  micropost_count:
+    one: 'micropost'
+    other: 'microposts'
   user_mailer:
     account_activation:
       subject: 'Account Activation'
@@ -138,6 +154,10 @@ en:
         reset_instructions: 'To reset your password, click the link below:'
         link_expires: 'This link will expire in two hours.'
         ignore_email: 'If you did not request your password to be reset, please ignore this email and your password will stay as it is.'
+  invalid_type: 'must be a valid image format'
+  max_size: 'should be less than 5MB'
+  alert:
+    limit_size: 'Maximum file size is 5MB. Please choose a smaller file.'
   pagy:
     nav:
       prev: 'Prev'

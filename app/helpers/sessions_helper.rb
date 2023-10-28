@@ -25,7 +25,7 @@ module SessionsHelper
     @current_user = nil
   end
 
-  def current_user?(user)
+  def current_user? user
     user == current_user
   end
 
@@ -45,7 +45,7 @@ module SessionsHelper
     session[:forwarding_url] = request.original_url if request.get?
   end
 
-  def redirect_back_or(default)
+  def redirect_back_or default
     redirect_to(session[:forwarding_url] || default)
     session.delete(:forwarding_url)
   end
