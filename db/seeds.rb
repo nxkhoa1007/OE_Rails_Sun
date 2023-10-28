@@ -12,7 +12,10 @@ User.create!(
   password: "foobar",
   password_confirmation: "foobar",
   dob: Faker::Date.birthday(min_age: 18, max_age: 65),
-  gender: Faker::Base.rand(0..2)
+  gender: Faker::Base.rand(0..2),
+  admin: true,
+  activated: true,
+  activated_at: Time.zone.now
 )
 
 30.times do |n|
@@ -28,7 +31,9 @@ User.create!(
     password: password,
     password_confirmation: password,
     dob: dob,
-    gender: gender
+    gender: gender,
+    activated: true,
+    activated_at: Time.zone.now
   )
 
 end

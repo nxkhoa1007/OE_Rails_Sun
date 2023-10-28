@@ -15,6 +15,7 @@ class UsersController < ApplicationController
     end
     if @user.save
       log_in @user
+      redirect_to static_pages_home_path
     end
   end
 
@@ -30,9 +31,9 @@ class UsersController < ApplicationController
     @user = User.new user_params
 
     if @user.save
-      log_in @user
+      @user.send_activation_email
       flash[:success] = t("created_successful")
-      redirect_to @user
+      redirect_to root_path
     else
       render :new, status: 422
     end

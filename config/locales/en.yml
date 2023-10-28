@@ -90,7 +90,7 @@ en:
   title: 'Ruby On Rails tutorials'
   login: 'Login'
   register: 'Register Account'
-  created_successful: 'Account Created successful'
+  created_successful: 'Account created successful, please check your email to activate your account'
   not_found_user: 'Not found user'
   edit_user: 'Edit user'
   users: 'List Users'
@@ -111,6 +111,16 @@ en:
   user_deleted: 'User deleted!'
   delete_fail: 'Delete fail!'
   cannot_delete: 'You cannot delete this account'
+  account_activated: 'Account activated!'
+  invalid_activation_link: 'Invalid activation link'
+  account_not_activated: 'Account not activated'
+  user_mailer:
+    account_activation:
+      subject: 'Account Activation'
+      content:
+        hi: 'Hi'
+        description: 'Welcome to the Ruby on Rails Basic! Click on the link below to activate your account:'
+        activate: 'Kích hoạt'
   pagy:
     nav:
       prev: 'Prev'
