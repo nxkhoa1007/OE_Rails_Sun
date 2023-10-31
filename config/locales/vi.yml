@@ -18,6 +18,7 @@ vi:
     models:
       user: 'Người dùng'
       session: 'Session'
+      password_reset: 'Đổi lại mật khẩu'
     attributes:
       user:
         name: 'Tên'
@@ -30,6 +31,8 @@ vi:
   error:
     one: 'lỗi'
     other: 'lỗi'
+  password_resets:
+    error: 'không được để trống'
   hello: 'Xin chào TPIV'
   male: 'Nam'
   female: 'Nữ'
@@ -79,6 +82,14 @@ vi:
   account_activated: 'Tài khoản đã được kích hoạt!'
   invalid_activation_link: 'Đường dẫn không hợp lệ'
   account_not_activated: 'Tài khoản chưa được kích hoạt!'
+  forgot_password?: 'Quên mật khẩu?'
+  reset_password: 'Đặt lại mật khẩu'
+  update_new_password: 'Cập nhật mật khẩu mới'
+  update_password: 'Cập nhật mật khẩu'
+  reset_success: 'Đổi mật khẩu thành công'
+  send_email: 'Gửi Email'
+  email_not_found: 'Email không tồn tại'
+  send_email_reset_success : 'Gửi email đặt lại mật khẩu thành công!'
   user_mailer:
     account_activation:
       subject: 'Kích hoạt tài khoản'
@@ -86,6 +97,12 @@ vi:
         hi: 'Xin chào'
         description: 'Chào mừng đến với Ruby on Rails cơ bản! Bấm vào liên kết phía dưới để kích hoạt tài khoản:'
         activate: 'Kích hoạt'
+    password_reset:
+      subject: 'Đặt lại mật khẩu'
+      content:
+        reset_instructions: 'Để đặt lại mật khẩu của bạn, hãy nhấn vào liên kết bên dưới:'
+        link_expires: 'Liên kết này sẽ hết hạn trong hai giờ.'
+        ignore_email: 'Nếu bạn không yêu cầu đặt lại mật khẩu, vui lòng bỏ qua email này và mật khẩu của bạn sẽ được giữ nguyên.'
   pagy:
     nav:
       prev: 'Trước'

@@ -52,6 +52,7 @@ en:
     models:
       user: 'User'
       session: 'Session'
+      password_reset: 'Password Reset'
     attributes:
       user:
         name: 'Name'
@@ -64,6 +65,8 @@ en:
   error:
     one: 'error'
     other: 'errors'
+  password_resets:
+    error: 'can not be blank'
   hello: 'Hello TIPV'
   male: 'Male'
   female: 'Female'
@@ -114,13 +117,27 @@ en:
   account_activated: 'Account activated!'
   invalid_activation_link: 'Invalid activation link'
   account_not_activated: 'Account not activated'
+  forgot_password?: 'Forgot password?'
+  send_email: 'Send Email'
+  email_not_found: 'Email is invalid'
+  reset_password: 'Reset Password'
+  update_new_password: 'Update new password'
+  update_password: 'Update password'
+  reset_success: 'Reset password success'
+  send_email_reset_success : 'Send email reset success!'
   user_mailer:
     account_activation:
       subject: 'Account Activation'
       content:
         hi: 'Hi'
         description: 'Welcome to the Ruby on Rails Basic! Click on the link below to activate your account:'
-        activate: 'Kích hoạt'
+        activate: 'Activate'
+    password_reset:
+      subject: 'Password reset'
+      content:
+        reset_instructions: 'To reset your password, click the link below:'
+        link_expires: 'This link will expire in two hours.'
+        ignore_email: 'If you did not request your password to be reset, please ignore this email and your password will stay as it is.'
   pagy:
     nav:
       prev: 'Prev'
