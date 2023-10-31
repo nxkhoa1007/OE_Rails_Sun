@@ -55,7 +55,7 @@ vi:
   zone: 'Vùng'
   title: 'Hướng dẫn học Ruby On Rails'
   register: 'Đăng ký tài khoản'
-  created_successful: 'Tạo tài khoản thành công'
+  created_successful: 'Tạo tài khoản thành công, vui lòng kiểm tra email để kích hoạt tài khoản'
   not_found_user: 'Không tìm thấy người dùng'
   users: 'Danh sách người dùng'
   edit_user: 'Chỉnh sửa người dùng'
@@ -76,6 +76,16 @@ vi:
   user_deleted: 'Xoá người dùng thành công!'
   delete_fail: 'Xoá thât bại!'
   cannot_delete: 'Bạn không thể xoá tài khoản này'
+  account_activated: 'Tài khoản đã được kích hoạt!'
+  invalid_activation_link: 'Đường dẫn không hợp lệ'
+  account_not_activated: 'Tài khoản chưa được kích hoạt!'
+  user_mailer:
+    account_activation:
+      subject: 'Kích hoạt tài khoản'
+      content:
+        hi: 'Xin chào'
+        description: 'Chào mừng đến với Ruby on Rails cơ bản! Bấm vào liên kết phía dưới để kích hoạt tài khoản:'
+        activate: 'Kích hoạt'
   pagy:
     nav:
       prev: 'Trước'
