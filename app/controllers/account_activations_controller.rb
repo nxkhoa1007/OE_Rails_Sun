@@ -2,7 +2,8 @@ class AccountActivationsController < ApplicationController
   before_action :load_user, only: :edit
 
   def edit
-    if @user && !@user.activated && @user.authenticated?(:activation, params[:id])
+    if @user && !@user.activated &&
+       @user.authenticated?(:activation, params[:id])
       @user.activate
       flash[:success] = t("account_activated")
       redirect_to login_path

@@ -35,8 +35,6 @@ gem "rails-i18n"
 
 gem "bcrypt", "3.1.13"
 
-gem "importmap-rails"
-
 gem "pry-rails"
 
 gem "faker", "2.21.0"
@@ -44,6 +42,14 @@ gem "faker", "2.21.0"
 gem "pagy"
 
 gem "figaro"
+
+gem "image_processing", "1.12.2"
+
+gem "active_storage_validations", "0.9.8"
+
+gem "i18n-js", "~>3.9.2"
+
+gem "mini_magick"
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
@@ -72,9 +78,7 @@ group :development, :test do
   gem "rubocop", "~> 1.26", require: false
   gem "rubocop-checkstyle_formatter", require: false
   gem "rubocop-rails", "~> 2.14.0", require: false
-
 end
-
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
@@ -93,4 +97,4 @@ group :test do
   gem "webdrivers"
 end
 
-gem "byebug", "~> 11.1", :groups => [:development, :test]
+gem "byebug", "~> 11.1", groups: [:development, :test]

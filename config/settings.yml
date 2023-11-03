@@ -1,9 +1,12 @@
 VALID_EMAIL_REGEX: '\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z'
-max_length: 50
-min_length: 6
+digit_5: 5
+digit_6: 6
+digit_50: 50
+digit_140: 140
+digit_500: 500
 gender_male: 'Male'
 gender_female: 'Female'
 gender_other: 'Other'
-pagy_limit: 10
-digit_50: 50
 digit_2: 2
+page_10: 10
+accept_file: 'image/jpeg,image/gif,image/png,image/webp,image/jpg'

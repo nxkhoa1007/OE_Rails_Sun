@@ -1,0 +1,15 @@
+# translations:
+#   - file: "app/javascript/bundles/i18n/en.js"
+#     prefix: "import I18n from 'i18n-js';\n"
+#     pretty_print: true
+#     only: "en.*"
+#   - file: "app/javascript/bundles/i18n/vi.js"
+#     prefix: "import I18n from 'i18n-js';\n"
+#     pretty_print: true
+#     only: "vi.*"
+
+translations:
+  - file: "app/javascript/i18n/%{locale}.js"
+    prefix: "import I18n from 'i18n-js';\n"
+    pretty_print: true
+    only: "*"
