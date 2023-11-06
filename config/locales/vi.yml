@@ -123,6 +123,11 @@ vi:
   max_size: 'nên dưới 5MB'
   alert:
     limit_size: 'Kích thước file tối đa là 5MB. Hãy chọn file nhỏ hơn.'
+  following: 'Đang theo dõi'
+  followers: 'Người theo dõi'
+  follow: 'Theo dõi'
+  unfollow: 'Bỏ theo dõi'
+  not_found_relationship: 'Không tìm thấy quan hệ'
   pagy:
     nav:
       prev: 'Trước'

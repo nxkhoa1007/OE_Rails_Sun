@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
-  before_action :logged_in_user, except: %i(new create)
-  before_action :load_user, only: %i(edit update destroy)
+  before_action :logged_in_user, except: %i(new create show)
+  before_action :load_user, except: %i(index new create)
   before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: :destroy
 
@@ -40,7 +40,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find_by id: params[:id]
-    @page, @microposts = pagy @user.feed, items: Settings.page_10
+    @page, @microposts = pagy @user.microposts.newest, items: Settings.page_10
     return if @user
 
     flash.now[:warning] = t("not_found_user")
@@ -63,6 +63,18 @@ class UsersController < ApplicationController
       flash[:danger] = t("delete_fail!")
     end
     redirect_to users_path
+  end
+
+  def following
+    @title = t("following")
+    @pagy, @users = pagy @user.following, items: Settings.page_10
+    render :show_follow
+  end
+
+  def followers
+    @title = t("followers")
+    @pagy, @users = pagy @user.followers, items: Settings.page_10
+    render :show_follow
   end
 
   private

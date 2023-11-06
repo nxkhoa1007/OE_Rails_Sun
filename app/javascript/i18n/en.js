@@ -73205,6 +73205,9 @@ I18n.translations["en"] = I18n.extend((I18n.translations["en"] || {}), {
     }
   },
   "female": "Female",
+  "follow": "Follow",
+  "followers": "Followers",
+  "following": "Following",
   "forgot_password?": "Forgot password?",
   "hello": "Hello TIPV",
   "help": "Help",
@@ -73386,6 +73389,7 @@ I18n.translations["en"] = I18n.extend((I18n.translations["en"] || {}), {
   "microposts": "Microposts",
   "microposts_feed": "Microposts feed",
   "new_user?": "New User?",
+  "not_found_relationship": "Not Found Relationship",
   "not_found_user": "Not found user",
   "number": {
     "currency": {
@@ -73517,6 +73521,7 @@ I18n.translations["en"] = I18n.extend((I18n.translations["en"] || {}), {
     "pm": "pm"
   },
   "title": "Ruby On Rails tutorials",
+  "unfollow": "Unfollow",
   "update_new_password": "Update new password",
   "update_password": "Update password",
   "update_successful": "User update successful!",

@@ -10,8 +10,12 @@
       <p><%= t "created_at" %>: <%= @user.created_at.strftime("%d/%m/%Y %H:%M:%S") %></p>
       <p><%= t "updated_at" %>: <%= @user.updated_at.strftime("%d/%m/%Y %H:%M:%S") %></p>
     </section>
+    <section class="stats">
+      <%= render "shared/stats" %>
+    </section>
   </aside>
   <div class="col-md-8">
+  <%= render "follow_form" if logged_in? %>
   <% if @microposts.any? %>
     <h3><%= t "microposts" %> (<%= @user.microposts.count %>)</h3>
     <ol class="microposts">

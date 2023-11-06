@@ -158,6 +158,11 @@ en:
   max_size: 'should be less than 5MB'
   alert:
     limit_size: 'Maximum file size is 5MB. Please choose a smaller file.'
+  following: 'Following'
+  followers: 'Followers'
+  follow: 'Follow'
+  unfollow: 'Unfollow'
+  not_found_relationship: 'Not Found Relationship'
   pagy:
     nav:
       prev: 'Prev'

@@ -573,6 +573,9 @@ I18n.translations["vi"] = I18n.extend((I18n.translations["vi"] || {}), {
     }
   },
   "female": "Nữ",
+  "follow": "Theo dõi",
+  "followers": "Người theo dõi",
+  "following": "Đang theo dõi",
   "forgot_password?": "Quên mật khẩu?",
   "hello": "Xin chào TPIV",
   "help": "Hỗ trợ",
@@ -753,6 +756,7 @@ I18n.translations["vi"] = I18n.extend((I18n.translations["vi"] || {}), {
   "microposts": "Bài đăng",
   "microposts_feed": "Các bài đăng",
   "new_user?": "Thành viên mới?",
+  "not_found_relationship": "Không tìm thấy quan hệ",
   "not_found_user": "Không tìm thấy người dùng",
   "number": {
     "currency": {
@@ -875,6 +879,7 @@ I18n.translations["vi"] = I18n.extend((I18n.translations["vi"] || {}), {
     "pm": "chiều"
   },
   "title": "Hướng dẫn học Ruby On Rails",
+  "unfollow": "Bỏ theo dõi",
   "update_new_password": "Cập nhật mật khẩu mới",
   "update_password": "Cập nhật mật khẩu",
   "update_successful": "Cập nhật người dùng thành công!",
